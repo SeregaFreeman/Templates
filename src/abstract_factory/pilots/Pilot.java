@@ -1,4 +1,4 @@
-package abstract_factory;
+package abstract_factory.pilots;
 
 public interface Pilot {
     void pilotPlane();

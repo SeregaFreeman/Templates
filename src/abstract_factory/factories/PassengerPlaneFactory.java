@@ -1,4 +1,9 @@
-package abstract_factory;
+package abstract_factory.factories;
+
+import abstract_factory.pilots.PassengerPlanePilot;
+import abstract_factory.pilots.Pilot;
+import abstract_factory.planes.Aircraft;
+import abstract_factory.planes.PassengerAirplane;
 
 public class PassengerPlaneFactory implements PlaneFactory{
     private String planeName;

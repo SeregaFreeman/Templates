@@ -1,9 +1,9 @@
-package abstract_factory;
+package abstract_factory.pilots;
 
-public class WarPlanePilot implements Pilot{
+public class PassengerPlanePilot implements Pilot{
     private String pilotName;
 
-    public WarPlanePilot(String pilotName){
+    public PassengerPlanePilot(String pilotName){
         this.pilotName = pilotName;
     }
 
@@ -16,6 +16,6 @@ public class WarPlanePilot implements Pilot{
     }
 
     public void pilotPlane(){
-        System.out.println("I'm piloting military plane");
+        System.out.println("I'm piloting passenger plane");
     }
 }

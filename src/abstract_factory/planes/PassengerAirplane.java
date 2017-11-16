@@ -1,9 +1,9 @@
-package abstract_factory;
+package abstract_factory.planes;
 
-public class WarPlane implements Aircraft{
+public class PassengerAirplane implements Aircraft{
     private String planeName;
 
-    public WarPlane(String planeName){
+    public PassengerAirplane(String planeName){
         this.planeName = planeName;
     }
 
@@ -16,6 +16,7 @@ public class WarPlane implements Aircraft{
     }
 
     public void getInfo(){
-        System.out.println("This is military plane");
+        System.out.println("This is passenger airplane");
     }
+
 }
