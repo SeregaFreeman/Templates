@@ -21,10 +21,10 @@ abstract class HeadOfDepartment{
     }
 
     // factory method
-    public abstract Engineer makeEngineer();
+    public abstract IEngineer makeEngineer();
 
     public void doWork(){
-        Engineer engineer = this.makeEngineer();
-        engineer.doEngineering();
+        IEngineer IEngineer = this.makeEngineer();
+        IEngineer.doEngineering();
     }
 }

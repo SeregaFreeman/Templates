@@ -7,7 +7,7 @@ public class MainEngineerCreator extends HeadOfDepartment{
         this.mainEngineername = mainEngineername;
     }
 
-    public Engineer makeEngineer(){
-        return new MainEngineer(this.mainEngineername);
+    public IEngineer makeEngineer(){
+        return new MainIEngineer(this.mainEngineername);
     }
 }

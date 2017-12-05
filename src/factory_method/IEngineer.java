@@ -1,5 +1,5 @@
 package factory_method;
 
-public interface Engineer {
+public interface IEngineer {
     void doEngineering();
 }

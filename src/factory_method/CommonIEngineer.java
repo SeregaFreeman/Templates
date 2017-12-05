@@ -1,9 +1,9 @@
 package factory_method;
 
-public class CommonEngineer implements Engineer{
+public class CommonIEngineer implements IEngineer {
     private String commonEngineerName;
 
-    public CommonEngineer(String commonEngineerName){
+    public CommonIEngineer(String commonEngineerName){
         this.commonEngineerName = commonEngineerName;
     }
 

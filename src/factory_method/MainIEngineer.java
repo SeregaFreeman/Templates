@@ -1,9 +1,9 @@
 package factory_method;
 
-public class MainEngineer implements Engineer{
+public class MainIEngineer implements IEngineer {
     private String mainEngineerName;
 
-    public MainEngineer(String mainEngineerName){
+    public MainIEngineer(String mainEngineerName){
         this.mainEngineerName = mainEngineerName;
     }
 

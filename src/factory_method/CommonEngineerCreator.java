@@ -7,7 +7,7 @@ public class CommonEngineerCreator extends HeadOfDepartment{
         this.commonEngineername = commonEngineername;
     }
 
-    public Engineer makeEngineer(){
-        return new CommonEngineer(this.commonEngineername);
+    public IEngineer makeEngineer(){
+        return new CommonIEngineer(this.commonEngineername);
     }
 }
