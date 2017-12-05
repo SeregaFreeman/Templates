@@ -1,6 +1,6 @@
 package decorator;
 
-public interface Burger {
+public interface IBurger {
     String getDescription();
     int getCost();
 }

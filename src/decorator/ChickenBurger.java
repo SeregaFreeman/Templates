@@ -1,6 +1,6 @@
 package decorator;
 
-public class ChickenBurger implements Burger{
+public class ChickenBurger implements IBurger{
     public String getDescription(){
         return "Chicken burger";
     }

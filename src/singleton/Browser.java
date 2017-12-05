@@ -1,17 +1,27 @@
 package singleton;
 
 public class Browser {
-    private static Browser instance;
+    private static volatile Browser instance;
+    private static String testValue;
 
-    public static Browser getInstance(){
+    private Browser(String testValue) {
+        this.testValue = testValue;
+    }
+
+    public static Browser getInstance(String testValue){
         if (instance==null){
-            System.out.println("New instance");
-            instance = new Browser();
+            synchronized (Browser.class){
+                if (instance==null){
+                    System.out.println("New instance " + testValue);
+                    instance = new Browser(testValue);
+                }
+            }
         }
         return instance;
     }
 
-    public void printBrowser(){
-        System.out.println("print instance");
+    public String getTestValue(){
+        return testValue;
     }
+
 }

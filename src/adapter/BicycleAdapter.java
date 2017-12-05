@@ -1,6 +1,6 @@
 package adapter;
 
-public class BicycleAdapter implements Vehicle{
+public class BicycleAdapter implements IVehicle {
     private Bicycle bicycle;
 
     public BicycleAdapter(Bicycle bicycle){

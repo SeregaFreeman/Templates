@@ -1,12 +1,12 @@
 package singleton;
 
 public class SingletonRunner {
-    protected static Browser browser = Browser.getInstance();
 
     public static void main(String[] args) {
-        browser = Browser.getInstance();
-        System.out.println(browser);
-        browser = Browser.getInstance();
-        System.out.println(browser);
+        Browser browser1 = Browser.getInstance("First");
+        System.out.println(browser1.getTestValue());
+        
+        Browser browser2 = Browser.getInstance("Second");
+        System.out.println(browser2.getTestValue());
     }
 }

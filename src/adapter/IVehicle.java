@@ -1,5 +1,5 @@
 package adapter;
 
-public interface Vehicle {
+public interface IVehicle {
     void run();
 }

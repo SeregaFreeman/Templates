@@ -1,9 +1,9 @@
 package decorator;
 
-public class SpicyChickenBurger implements Burger{
-    private Burger burger;
+public class SpicyChickenBurger implements IBurger{
+    private IBurger burger;
 
-    public SpicyChickenBurger(Burger burger){
+    public SpicyChickenBurger(IBurger burger){
         this.burger = burger;
     }
 
