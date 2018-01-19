@@ -6,9 +6,9 @@ import java.awt.*;
 
 
 public class Demo {
-    static int CANVAS_SIZE = 500;
-    static int TREES_TO_DRAW = 1000000;
-    static int TREE_TYPES = 2;
+    static int CANVAS_SIZE = 5000;
+    static int TREES_TO_DRAW = 10000000;
+    static int TREE_TYPES = 5;
 
     public static void main(String[] args) {
         Forest forest = new Forest();
